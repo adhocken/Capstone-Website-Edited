@@ -1,0 +1,44 @@
+.bg-image {
+  background-image: url(bg/sample.png);
+  height: 9vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  width: 40%;
+  margin-left: 85px;
+  background-color: #f8f8f8;
+}
+
+.card img {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.input-group-text {
+  background-color: #000;
+  border: none;
+}
+
+.form-control {
+  border: none;
+  box-shadow: none;
+}
+
+.btn-danger {
+  background-color: #ff5733;
+  border: none;
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 90%;
+    margin: auto auto;
+  }
+}

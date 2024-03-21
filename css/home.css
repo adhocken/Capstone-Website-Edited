@@ -1,0 +1,278 @@
+.bg-image {
+  background-image: url("bg/home.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* BOOK-SELLING SECTION */
+.book-selling {
+  padding: 92px 0;
+}
+
+#bookHeader {
+  padding-bottom: 16px;
+}
+
+#imgWorkBook img {
+  border-radius: 25px;
+  width: 90%;
+  height: 70%;
+}
+
+#selling-content h2 {
+  margin-bottom: 24px;
+}
+
+#selling-content p {
+  font-size: 19px;
+}
+
+#btnBuy {
+  margin-right: 12px;
+}
+
+#dropdownBuyButton,
+#infoButton,
+#guidedMeditationsButton,
+#sahajaButton,
+#viewMoreBlog {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+
+#dropdownBuyButton {
+  margin-right: 12px;
+}
+
+#dropdownBuyButton .fa {
+  margin-left: 0.5rem;
+}
+
+/* Styling the dropdown menu on hover */
+a.dropdown-item:hover,
+a.dropdown-item:focus,
+#dropdownBuyButton:hover,
+#infoButton:hover,
+#guidedMeditationsButton:hover,
+#sahajaButton:hover,
+#viewMoreBlog:hover {
+  color: #fff;
+  background-color: #000;
+  transition: all 250ms ease-in-out;
+}
+
+/* BOOK CONTENT SECTION */
+
+#featured-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-header {
+  display: none;
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 12px;
+  font-size: 40px;
+}
+
+.desktop-header {
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+#side-content {
+  padding-left: 15px; /* Adjust as needed */
+}
+
+.side-content-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.side-content-item img {
+  width: 45%;
+  margin-right: 15px;
+}
+
+.side-content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-content-text small {
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: italic;
+  color: grey;
+}
+
+/* BLOG UPDATES */
+.blog-updates {
+  margin-bottom: 2rem;
+}
+
+.blog-updates .jumbotron {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.blog-updates img {
+  width: 50%;
+  height: 50;
+  margin-bottom: 8px;
+  border-radius: 25px;
+}
+
+#left-blog,
+#right-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+#left-blog {
+  align-items: end;
+}
+
+#right-blog {
+  align-items: start;
+}
+
+.blog-updates h6,
+.blog-updates small {
+  width: 49%;
+  text-align: center;
+}
+
+.blog-updates h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.blog-updates small {
+  margin-bottom: 1rem;
+}
+
+/* TOOLS CONTENT */
+#mobileMeditate {
+  display: none;
+}
+.tools-content {
+  padding: 60px 0 45px;
+}
+
+.tools-content img {
+  width: 90%;
+  height: 90%;
+}
+
+.tools-content p {
+  font-size: 20px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#secondTool {
+  padding-top: 24px;
+}
+
+@media (max-width: 991px) {
+  #featured-content,
+  #side-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .side-content-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  #featured-content img,
+  #imgWorkBook img {
+    height: 90%;
+  }
+
+  h1.desktop-header {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .side-content-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .side-content-item img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .sell-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  #featured-content img {
+    height: 65%;
+    width: 90%;
+  }
+
+  #featured-content img,
+  #imgWorbook img {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #left-blog,
+  #right-blog {
+    align-items: center;
+  }
+
+  .blog-updates img,
+  .blog-updates h6,
+  .blog-updates small {
+    width: 90%;
+  }
+
+  #guidedMeditationsButton,
+  #sahajaButton {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 50%;
+  }
+
+  #mobileMeditate {
+    display: block;
+  }
+
+  #websiteMeditate {
+    display: none;
+  }
+
+  .tools-content img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 16px;
+  }
+}

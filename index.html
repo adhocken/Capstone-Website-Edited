@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation Workbook</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="shortcut icon"
+      href="img/meditationworkbook.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">Meditation Workbook</a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Home -->
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  id="active"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <!-- Authors -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="authorsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-user"></i> Authors
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="authorsDropdown">
+                  <li>
+                    <a class="dropdown-item" href="authorJulie.html"
+                      >About Julie</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="authorGita.html"
+                      >About Gita</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item" id="logoItem">
+                <a href="index.html" class=""
+                  ><img src="img/meditationworkbook.png" id="imgLogo"
+                /></a>
+              </li>
+              <!-- Blog -->
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html"
+                  ><i class="fa-solid fa-pen-to-square"></i> Blog</a
+                >
+              </li>
+              <!-- Tools -->
+              <li class="nav-item">
+                <a class="nav-link" href="tools.html"
+                  ><i class="fa-solid fa-link"></i> Tools</a
+                >
+              </li>
+            </ul>
+            <!-- Admin Button -->
+            <form class="d-flex" role="search">
+              <a class="btn" href="login.html" id="admin"
+                ><i class="fa-solid fa-right-to-bracket"></i> Admin</a
+              >
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Background image -->
+    <div class="bg-image"></div>
+
+    <main class="main-container">
+      <section class="book-selling">
+        <div class="container">
+          <div class="row">
+            <h1 class="jumbotron text-center" id="bookHeader">
+              Written by Julie Mandal and Gita Pattison
+            </h1>
+            <div class="col-lg-6" id="imgWorkBook">
+              <img src="img/book image.png" alt="Meditation Workbook Image" />
+            </div>
+            <div class="col-lg-6" id="selling-content">
+              <h2>Why This Book?</h2>
+              <p class="text-justify">
+                You know meditation is good for you - so how do you get started?
+              </p>
+              <p class="text-justify">Use this book!</p>
+              <p class="text-justify">
+                It is full of practical advice and has easy tracking tools so
+                you can build your own meditation habit.
+              </p>
+              <p class="text-justify">
+                By immersing yourself in this book and following the exercises,
+                you'll gain a deeper understanding of meditation and its
+                countless benefits not in general terms, but for you, your
+                circumstances, your life, your needs.
+              </p>
+              <p class="text-justify">
+                Let this workbook be your guide as the authors pass on their
+                knowledge, helping you establish a fulfilling meditation
+                practice.
+              </p>
+              <p class="text-justify">
+                You’ll find out what surprised them along the way, and why
+                neither of them ever wants to stop.
+              </p>
+              <div class="sell-buttons">
+                <div class="btn-group">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownBuyButton"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Buy Now
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownBuyButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.ca/dp/1777755689"
+                      >Amazon Canada</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.nl/dp/1777755689"
+                      >Amazon Netherlands</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.co.jp/dp/1777755689"
+                      >Amazon Japan</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.com/dp/1777755689"
+                      >Amazon US</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.it/dp/1777755689"
+                      >Amazon Italy</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.pl/dp/1777755689"
+                      >Amazon Poland</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.de/dp/1777755689"
+                      >Amazon Germany</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.es/dp/1777755689"
+                      >Amazon Spain</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.se/dp/1777755689"
+                      >Amazon Sweden</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.co.uk/dp/1777755689"
+                      >Amazon UK</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.fr/dp/1777755689"
+                      >Amazon France</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="https://www.amazon.com.au/dp/1777755689"
+                      >Amazon Australia</a
+                    >
+                  </div>
+                </div>
+                <a
+                  class="btn btn-secondary"
+                  id="infoButton"
+                  href="bookInfo.html"
+                  role="button"
+                  >More Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-content">
+        <div class="container">
+          <div class="row">
+            <!-- Featured Content -->
+            <div class="col-lg-8 mb-4" id="featured-content">
+              <h1 class="mobile-header">Book Content</h1>
+              <img
+                src="img/shri.png"
+                class="img-fluid mb-3"
+                alt="Featured Image"
+              />
+              <h6>FROM MEDITATION WORKBOOK</h6>
+              <h3>Founder of Sahaja Yoga: Shri Mataji Nirmala Devi</h3>
+              <p class="text-justify">
+                Shri Mataji Nirmala Devi is the Founder of Sahaja Yoga, she has
+                travelled the world to share this unique meditation technique.
+              </p>
+            </div>
+
+            <!-- Side Content -->
+            <div class="col-lg-4" id="side-content">
+              <h1 class="desktop-header">Book Content</h1>
+              <div class="side-content-item mb-4 d-flex">
+                <img
+                  src="img/footsoak.jpg"
+                  class="img-fluid"
+                  alt="Side Content Image"
+                />
+                <div class="side-content-text">
+                  <h5>FOOTSOAK</h5>
+                  <p class="text-justify">Random Text for Now</p>
+                  <small>By Meditation Workbook</small>
+                </div>
+              </div>
+              <div class="side-content-item mb-4 d-flex">
+                <img
+                  src="img/kundalani.png"
+                  class="img-fluid"
+                  alt="Side Content Image"
+                />
+                <div class="side-content-text">
+                  <h6>RAISE YOUR KUNDALANI</h6>
+                  <p class="text-justify">Random Text for Now</p>
+                  <small>By Meditation Workbook</small>
+                </div>
+              </div>
+              <div class="side-content-item mb-4 d-flex">
+                <img
+                  src="img/bhandan.png"
+                  class="img-fluid"
+                  alt="Side Content Image"
+                />
+                <div class="side-content-text">
+                  <h6>GIVE YOURSELF A BHANDAN</h6>
+                  <p class="text-justify">Random Text for Now</p>
+                  <small>By Meditation Workbook</small>
+                </div>
+              </div>
+              <div class="side-content-item mb-4 d-flex">
+                <img
+                  src="img/subtlesystem.png"
+                  class="img-fluid"
+                  alt="Side Content Image"
+                />
+                <div class="side-content-text">
+                  <h6>SUBTLE SYSTEM</h6>
+                  <p class="text-justify">Random Text for Now</p>
+                  <small>By Meditation Workbook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-updates">
+        <div class="container">
+          <!-- Blog Headline -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <h1 class="jumbotron text-center">Latest Blog Updates</h1>
+              <p class="text-center">
+                Conversations with change-makers, on topics that matter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Blog Entries -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Top Left Blog -->
+              <div class="mt-3" id="left-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>
+                  Awakening Your Inner Energy: A Step-by-Step Guide to Raising
+                  Your Kundalini
+                </h6>
+                <small>February 25, 2024</small>
+              </div>
+
+              <!-- Middle Left Blog -->
+              <div class="mt-3" id="left-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>
+                  The Life and Legacy of Shri Mataji Nirmala Devi, Founder of
+                  Sahaja Yoga
+                </h6>
+                <small>February 23, 2024</small>
+              </div>
+
+              <!-- Bottom Left Blog -->
+              <div class="mt-3" id="left-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>HEADLINE TEXT</h6>
+                <small>February 21, 2024</small>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <!-- Top Right Blog -->
+              <div class="mt-3" id="right-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>
+                  Seven Circles of Protection: The Ritual of Giving Yourself a
+                  Bandhan
+                </h6>
+                <small>February 24, 2024</small>
+              </div>
+
+              <!-- Middle Right Blog -->
+              <div class="mt-3" id="right-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>
+                  Understanding the Subtle System and Its Influence on
+                  Well-being
+                </h6>
+                <small>February 22, 2024</small>
+              </div>
+
+              <!-- Bottom Right Blog -->
+              <div class="mt-3" id="right-blog">
+                <img src="img/persona.png" class="img-fluid" alt="IMAGE" />
+                <h6>HEADLINE TEXT</h6>
+                <small>February 20, 2024</small>
+              </div>
+            </div>
+          </div>
+
+          <!--  Button -->
+          <div class="row">
+            <div class="col-12 text-center mt-4">
+              <a
+                href="blog.html"
+                class="btn btn-primary"
+                role="button"
+                id="viewMoreBlog"
+                >View More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tools-content">
+        <div class="container">
+          <div class="row">
+            <h1 class="jumbotron text-center" id="bookHeader">
+              MEDITATION TOOLS
+            </h1>
+            <div class="col-lg-6" id="mobileMeditate">
+              <img src="img/wemeditate.png" alt="IMAGE" />
+            </div>
+            <div class="col-lg-6">
+              <h2>Guided Meditations</h2>
+              <p class="text-justify">
+                Determine how much time you have and what you are looking for:
+                10 minutes to feel more confident? 5 minutes to increase your
+                sense of harmony? Select what you need, and a beautiful guided
+                meditation will take you there.
+              </p>
+              <a
+                class="btn btn-primary"
+                id="guidedMeditationsButton"
+                href="https://wemeditate.com/"
+                role="button"
+                >More Information</a
+              >
+            </div>
+            <div class="col-lg-6" id="websiteMeditate">
+              <img src="img/wemeditate.png" alt="IMAGE" />
+            </div>
+          </div>
+
+          <div class="row" id="secondTool">
+            <div class="col-lg-6">
+              <img src="img/sahaja.jpg" alt="IMAGE" />
+            </div>
+            <div class="col-lg-6">
+              <h2>The Founder of Sahaja Yoga</h2>
+              <p class="text-justify">
+                Shri Mataji Nirmala Devi quietly transformed lives. For more
+                than forty years, she travelled internationally, offering free
+                public lectures and the experience of self-realization to all,
+                regardless of race, religion or circumstance. She not only
+                enabled people to pass this valuable experience on to others,
+                but taught them the meditation technique necessary to sustain
+                it, known as Sahaja Yoga.
+              </p>
+              <a
+                class="btn btn-primary"
+                id="sahajaButton"
+                href="https://shrimataji.org/"
+                role="button"
+                >More Information</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-black bg-white pt-4 pb-2">
+      <div class="container">
+        <!-- Top part of footer -->
+        <div class="row">
+          <!-- Contact & Meditators -->
+          <div class="col-md-6" id="lists">
+            <div class="listsRow">
+              <ul class="list-unstyled">
+                <h5>Contact</h5>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfiRC-BuKGmEX0IE5kNNsZ2OqCQ9qAdhnXlnrL3J1aqHS4s6A/viewform"
+                    >Author Event</a
+                  >
+                </li>
+                <li><a href="#">Event Calendar</a></li>
+                <li><a href="authorJulie.html">Julie Mandal</a></li>
+                <li><a href="authorGita.html">Gita Pattison</a></li>
+              </ul>
+            </div>
+            <div class="listsRow" id="listRow2">
+              <h5>Meditators</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.sahajayoga.ca/free-classes">Canada</a>
+                </li>
+                <li>
+                  <a href="https://us.sahajayoga.org/classes-near-me/"
+                    >United States</a
+                  >
+                </li>
+                <li><a href="https://www.sahajayoga.de/kurse/">Germany</a></li>
+                <li>
+                  <a href="https://sahajayoga.at/meditations-kurse-finden/"
+                    >Austria</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Subscription Form -->
+          <div class="col-md-6">
+            <h5>Receive updates straight to your inbox</h5>
+            <form class="form-inline">
+              <input
+                type="email"
+                class="form-control mb-2 mr-sm-2"
+                placeholder="Your Email Address"
+              />
+              <button type="submit" class="btn btn-warning mb-2">
+                Subscribe
+              </button>
+            </form>
+
+            <div class="social-icons">
+              <a href="#" class="text-black mr-2"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-black mr-2"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="text-black mr-2"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-black"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom part of footer -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <small>&copy; Meditation Workbook CA. All Rights Reserved</small>
+          </div>
+          <div class="col-md-6 text-md-right" id="utility-right">
+            <a href="#" class="text-black mr-2" id="TOS">Terms of Service</a>
+            <a href="#" class="text-black">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* NAVBAR INITIAL*/
+nav.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+nav {
+  --bs-navbar-padding-y: 0.6rem !important;
+}
+
+button.navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar-nav li a,
+a.navbar-brand {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+a.navbar-brand {
+  font-weight: bolder;
+}
+
+/* .nav-link.active::before {
+  width: 90%;
+  opacity: 1;
+} */
+
+#imgLogo {
+  width: 70px;
+  border-radius: 25px;
+}
+
+.nav-item {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles when navbar is sticky or hovered */
+nav.sticky .navbar-nav li a,
+nav.sticky .navbar-brand,
+nav.sticky #active,
+nav.navbar:hover .navbar-nav li a,
+nav.navbar:hover .navbar-brand,
+nav.navbar:hover #active {
+  /* color: #000;  */
+  /* Change to black color */
+}
+
+nav.sticky .navbar-nav li a,
+nav.sticky .navbar-brand,
+nav.sticky #active {
+  color: #000;
+
+  /* Change to black color */
+}
+
+nav.sticky #admin,
+nav.navbar:hover #admin {
+  /* color: #000; */
+  /* border: 1px solid black; */
+}
+
+nav.sticky #admin {
+  color: #000;
+  border: 1px solid black;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  color: #031d44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+
+.nav-link::before {
+  width: 0%;
+  bottom: 0;
+}
+
+.nav-link:hover::before {
+  width: 90%;
+}
+
+/* Hover effect for links */
+.nav-link:hover,
+.navbar-brand:hover {
+  /* background-color: rgba(255, 255, 255, 0.026);
+  padding: 0 20px;
+  border-radius: 21px; */
+  /* text-decoration: underline; */
+}
+
+/* Sticky Navbar */
+nav.sticky {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid #000; */
+}
+
+/* Adjust the navbar-brand for smaller screens */
+.navbar-brand {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#admin {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.nav-item .dropdown-menu {
+  /* Transparent background */
+  /* background-color: transparent; */
+  background-color: #000;
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+  color: #fff; /* White text for dropdown items */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover,
+.nav-item .dropdown-menu .dropdown-item:focus {
+  background-color: #fff; /* White background on hover/focus */
+  color: #000; /* Black text on hover/focus */
+}
+
+/* Dropdown Item Styles when navbar is sticky */
+nav.sticky .nav-item .dropdown-menu {
+  background-color: #fff; /* White background when navbar is sticky */
+}
+
+nav.sticky .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: white;
+}
+
+nav.sticky .nav-item .dropdown-menu .dropdown-item {
+  color: #000; /* Black text for dropdown items when navbar is sticky */
+}
+
+/* Adjusting the spacing and padding for dropdown items */
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem; /* Comfortable padding for dropdown items */
+}
+
+/* FOOTER */
+footer h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer #lists {
+  display: flex;
+  flex-direction: row;
+}
+
+.listsRow {
+  flex-direction: column;
+}
+
+#listRow2 {
+  margin: 0 auto;
+}
+
+footer ul li {
+  margin-bottom: 0.25rem;
+}
+
+footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer .btn-warning {
+  color: #000; /* Black text for button */
+  background-color: #ffc107; /* Bootstrap warning color */
+}
+
+footer .social-icons a {
+  font-size: 1.5rem; /* Larger icons */
+  margin-right: 1rem;
+}
+
+footer .social-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Footer utility styling */
+footer .row + .row {
+  border-top: 1px solid #333; /* Dark line for separation */
+  padding-top: 1rem; /* Space above the line */
+  margin-top: 1rem; /* Space above the line */
+}
+
+.form-inline {
+  display: flex;
+}
+
+.form-inline input {
+  margin-right: 26px;
+}
+
+#utility-right {
+  display: flex;
+  justify-content: end;
+}
+
+#utility-right a {
+  text-decoration: none;
+}
+
+#TOS {
+  margin-right: 8px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  /* FOOTER */
+  footer .social-icons {
+    margin-top: 1rem; /* Space for social icons when stacked */
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  footer .btn-warning {
+    width: 100%; /* Full width button on mobile */
+  }
+
+  footer .row + .row {
+    text-align: center;
+  }
+
+  #utility-right {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Custom styling for mobile devices */
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-toggler {
+    float: right;
+  }
+  #logoItem {
+    display: none;
+  }
+  #admin {
+    display: none;
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  /* Styling for large screens */
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+  .navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
