@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap"); */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* NAVBAR INITIAL*/
@@ -26,11 +24,6 @@ a.navbar-brand {
   font-weight: bolder;
 }
 
-/* .nav-link.active::before {
-  width: 90%;
-  opacity: 1;
-} */
-
 #imgLogo {
   width: 70px;
   border-radius: 25px;
@@ -42,29 +35,10 @@ a.navbar-brand {
   align-items: center;
 }
 
-/* Styles when navbar is sticky or hovered */
-nav.sticky .navbar-nav li a,
-nav.sticky .navbar-brand,
-nav.sticky #active,
-nav.navbar:hover .navbar-nav li a,
-nav.navbar:hover .navbar-brand,
-nav.navbar:hover #active {
-  /* color: #000;  */
-  /* Change to black color */
-}
-
 nav.sticky .navbar-nav li a,
 nav.sticky .navbar-brand,
 nav.sticky #active {
   color: #000;
-
-  /* Change to black color */
-}
-
-nav.sticky #admin,
-nav.navbar:hover #admin {
-  /* color: #000; */
-  /* border: 1px solid black; */
 }
 
 nav.sticky #admin {
@@ -75,7 +49,6 @@ nav.sticky #admin {
 .nav-link {
   font-weight: bold;
   font-size: 14px;
-  /* text-transform: uppercase; */
   text-decoration: none;
   color: #031d44;
   padding: 20px 0px;
@@ -85,11 +58,22 @@ nav.sticky #admin {
   opacity: 0.75;
 }
 
-.nav-link:hover {
+.listsRow ul li a,
+#TOS,
+#privacyPolicy {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link:hover,
+#active {
   opacity: 1;
 }
 
-.nav-link::before {
+.nav-link::before,
+.listsRow ul li a::before,
+#TOS::before,
+#privacyPolicy::before {
   transition: 300ms;
   height: 3px;
   content: "";
@@ -97,32 +81,27 @@ nav.sticky #admin {
   background-color: #000;
 }
 
-.nav-link::before {
+.nav-link::before,
+.listsRow ul li a::before,
+#TOS::before,
+#privacyPolicy::before {
   width: 0%;
   bottom: 0;
 }
 
-.nav-link:hover::before {
-  width: 90%;
-}
-
-/* Hover effect for links */
-.nav-link:hover,
-.navbar-brand:hover {
-  /* background-color: rgba(255, 255, 255, 0.026);
-  padding: 0 20px;
-  border-radius: 21px; */
-  /* text-decoration: underline; */
+.nav-link:hover::before,
+.listsRow ul li a:hover::before,
+#TOS:hover::before,
+#privacyPolicy:hover::before {
+  width: 95%;
 }
 
 /* Sticky Navbar */
 nav.sticky {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* border-bottom: 1px solid #000; */
 }
 
-/* Adjust the navbar-brand for smaller screens */
 .navbar-brand {
   white-space: nowrap;
   overflow: hidden;
@@ -135,25 +114,22 @@ nav.sticky {
 }
 
 .nav-item .dropdown-menu {
-  /* Transparent background */
-  /* background-color: transparent; */
   background-color: #000;
 }
 
 .nav-item .dropdown-menu .dropdown-item {
-  color: #fff; /* White text for dropdown items */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-item .dropdown-menu .dropdown-item:hover,
 .nav-item .dropdown-menu .dropdown-item:focus {
-  background-color: #fff; /* White background on hover/focus */
-  color: #000; /* Black text on hover/focus */
+  background-color: #fff;
+  color: #000;
 }
 
-/* Dropdown Item Styles when navbar is sticky */
 nav.sticky .nav-item .dropdown-menu {
-  background-color: #fff; /* White background when navbar is sticky */
+  background-color: #fff;
 }
 
 nav.sticky .nav-item .dropdown-menu .dropdown-item:hover {
@@ -162,12 +138,11 @@ nav.sticky .nav-item .dropdown-menu .dropdown-item:hover {
 }
 
 nav.sticky .nav-item .dropdown-menu .dropdown-item {
-  color: #000; /* Black text for dropdown items when navbar is sticky */
+  color: #000;
 }
 
-/* Adjusting the spacing and padding for dropdown items */
 .dropdown-menu .dropdown-item {
-  padding: 0.5rem 1rem; /* Comfortable padding for dropdown items */
+  padding: 0.5rem 1rem;
 }
 
 /* FOOTER */
@@ -204,8 +179,8 @@ footer ul li a {
 }
 
 footer .btn-warning {
-  color: #000; /* Black text for button */
-  background-color: #ffc107; /* Bootstrap warning color */
+  color: #000;
+  background-color: #ffc107;
 }
 
 footer .social-icons a {
@@ -217,11 +192,10 @@ footer .social-icons a:last-child {
   margin-right: 0;
 }
 
-/* Footer utility styling */
 footer .row + .row {
-  border-top: 1px solid #333; /* Dark line for separation */
-  padding-top: 1rem; /* Space above the line */
-  margin-top: 1rem; /* Space above the line */
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .form-inline {
@@ -249,7 +223,7 @@ footer .row + .row {
 @media (max-width: 767px) {
   /* FOOTER */
   footer .social-icons {
-    margin-top: 1rem; /* Space for social icons when stacked */
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
   }
@@ -260,7 +234,7 @@ footer .row + .row {
   }
 
   footer .btn-warning {
-    width: 100%; /* Full width button on mobile */
+    width: 100%;
   }
 
   footer .row + .row {
