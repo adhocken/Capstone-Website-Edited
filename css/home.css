@@ -122,37 +122,46 @@ a.dropdown-item:focus,
 .blog-updates .jumbotron {
   background-color: #fff;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
-.blog-updates img {
-  width: 50%;
-  height: 50;
-  margin-bottom: 8px;
-  border-radius: 25px;
-}
-
-#left-blog,
-#right-blog {
+.blog-card {
   display: flex;
   flex-direction: column;
 }
 
-#left-blog {
+.blog-updates img {
+  width: 50%;
+  height: 50%;
+  transform: 0.2s;
+  margin-bottom: 8px;
+  border-radius: 25px;
+}
+
+.blog-updates img:hover {
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.blog-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.left-blog a {
   align-items: end;
 }
 
-#right-blog {
-  align-items: start;
-}
-
-.blog-updates h6,
-.blog-updates small {
+.blog-card h6,
+.blog-card small {
   width: 49%;
   text-align: center;
 }
 
-.blog-updates h6 {
+.blog-card h6 {
   font-size: 1rem;
   font-weight: bold;
   color: #000;
@@ -160,6 +169,7 @@ a.dropdown-item:focus,
 
 .blog-updates small {
   margin-bottom: 1rem;
+  color: #000;
 }
 
 /* TOOLS CONTENT */
