@@ -112,9 +112,124 @@
 
     <div class="bg-image"></div>
 
-    <main class="main-container">
+    <main class="main-container" id="authorFormContainer">
       <div class="container">
-        <div class="row"></div>
+        <div class="row">
+          <h1 class="jumbotron text-center" id="authorVisit">
+            Author Visit Request
+          </h1>
+          <p class="text-center">
+            After you fill out this request form, we will contact you within two
+            business days to confirm availability and details.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <form class="authorForm">
+              <!-- Name -->
+              <div class="form-group mb-3">
+                <label for="name">Name <span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-group mb-3">
+                <label for="email">Email <span>*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <!-- Organization or Event -->
+              <div class="form-group mb-3">
+                <label for="organization"
+                  >Organization or Event <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="organization"
+                  placeholder="Enter your organization or event name"
+                  required
+                />
+              </div>
+
+              <!-- Location -->
+              <div class="form-group mb-3">
+                <label for="location">Location <span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  placeholder="Enter event location"
+                  required
+                />
+              </div>
+
+              <!-- Preferred Date -->
+              <div class="form-group mb-3">
+                <label for="preferredDate">Preferred Date <span>*</span></label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="preferredDate"
+                  required
+                />
+              </div>
+
+              <!-- Alternate Date -->
+              <div class="form-group mb-3">
+                <label for="alternateDate">Alternate Date <span>*</span></label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="alternateDate"
+                  required
+                />
+              </div>
+
+              <!-- Anticipated Number of Attendees -->
+              <div class="form-group mb-3">
+                <label for="attendees"
+                  >Anticipated Number of Attendees <span>*</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="attendees"
+                  placeholder="Enter the anticipated number of attendees"
+                  required
+                />
+              </div>
+
+              <!-- Additional Details -->
+              <div class="form-group mb-3">
+                <label for="details">Additional Details</label>
+                <textarea
+                  class="form-control"
+                  id="details"
+                  rows="3"
+                  placeholder="Enter any additional details here"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 
