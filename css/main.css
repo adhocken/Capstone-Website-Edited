@@ -6,6 +6,7 @@
   background-size: cover;
 }
 
+/* LOGIN CSS */
 .card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -34,6 +35,15 @@
   background-color: #ff5733;
   border: none;
   width: 30%;
+}
+
+/* BLOG CSS */
+.blog-updates {
+  padding: 60px 0 45px;
+}
+
+.blog-updates .jumbotron {
+  font-size: 3rem;
 }
 
 @media (max-width: 767px) {
