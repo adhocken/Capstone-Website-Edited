@@ -35,3 +35,39 @@
   border-top: 1px solid #000;
   padding-top: 24px;
 }
+
+/* bookInfo */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 0;
+}
+
+.imgWorkBook {
+  border-radius: 25px;
+  width: 40%;
+  height: 30%;
+}
+
+#dropdownBuyButton {
+  margin: 24px 0;
+}
+
+.quote {
+  border: 1px solid #000;
+  padding: 24px;
+  margin: 36px 0 24px;
+}
+
+.jumbotron {
+  margin: 36px 0 0;
+}
+
+@media (max-width: 767px) {
+  .imgWorkBook {
+    width: 90%;
+    height: 90%;
+  }
+}
